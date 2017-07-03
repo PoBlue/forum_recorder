@@ -2,7 +2,7 @@
 
 因为在论坛上下载不了 csv ，无法方便地统计。
 
-因此就做了这个项目，直接将论坛的数据变为 csv 方便统计
+因此就做了这个项目，直接爬取论坛的数据变为 csv 方便统计
 
 ![preview_data](https://user-images.githubusercontent.com/9304701/27799025-3119c7a4-6046-11e7-9d22-43e71d08cf6d.png)
 
