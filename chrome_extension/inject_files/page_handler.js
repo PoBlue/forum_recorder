@@ -72,17 +72,15 @@ function getCate(item) {
 }
 
 function jsonToFile(jsonObject) {
-    var data = jsonObject;
+    var data = JSON.stringify(jsonObject);
     var url = 'data:text/json;charset=utf8,' + encodeURIComponent(data);
     window.open(url, '_blank');
     window.focus();
 }
 
 //main
-console.log("hello,world");
-console.log("test");
 var datas = filterDate(getForumData());
 var fendDatas = filterCate(datas, FENDCATE);
 var andDatas = filterCate(datas, ANDCATE);
-console.log(fendDatas);
-console.log(andDatas);
+jsonToFile(fendDatas);
+jsonToFile(andDatas);
