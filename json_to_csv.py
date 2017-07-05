@@ -1,8 +1,9 @@
 import rows
 import json
+from os import listdir
+from os.path import isfile, join, splitext
 
-AND_FILE = "and.json"
-FEND_FILE = "fend.json"
+input_path = "input_json"
 output_path = "output_csv/"
 
 def get_record_data(data):
@@ -21,10 +22,17 @@ def get_record_data(data):
 def to_record_csv(json_file_path, output_name):
     with open(json_file_path) as data_file:
         data = json.load(data_file)
-
-    data = get_record_data(data)
+    
+    data = get_record_data(data) # one by one / count down
 
     data_table = rows.import_from_dicts(data)
     rows.export_to_csv(data_table, output_path + output_name)
 
-to_record_csv(FEND_FILE, "fend.csv")
+def get_files_name(mypath):
+    onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+    return onlyfiles
+
+files_name = get_files_name(input_path)
+for name in files_name:
+    output_name = splitext(name)[0] + '.csv'
+    to_record_csv(input_path + '/' + name, output_name)

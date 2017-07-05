@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AND_FILE	../json_to_csv.py	/^AND_FILE = "and.json"$/;"	kind:variable	line:4
+FEND_FILE	../json_to_csv.py	/^FEND_FILE = "fend.json"$/;"	kind:variable	line:5
+get_record_data	../json_to_csv.py	/^def get_record_data(data):$/;"	kind:function	line:8
+json	../json_to_csv.py	/^import json$/;"	kind:namespace	line:2
+json_to_csv.py	../json_to_csv.py	1;"	kind:file	line:1
+output_path	../json_to_csv.py	/^output_path = "output_csv\/"$/;"	kind:variable	line:6
+rows	../json_to_csv.py	/^import rows$/;"	kind:namespace	line:1
+to_record_csv	../json_to_csv.py	/^def to_record_csv(json_file_path, output_name):$/;"	kind:function	line:21
