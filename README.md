@@ -2,8 +2,8 @@
 
 因为在论坛上下载不了 csv ，无法方便地统计。
 
-因此就做了这个项目，直接将论坛的数据变为 csv 进行记录
-
+因此就做了这个项目，直接将论坛的数据变为 csv （如下）
+![图](https://user-images.githubusercontent.com/9304701/27799025-3119c7a4-6046-11e7-9d22-43e71d08cf6d.png)
 
 ## 环境需求
 - Python 3.0
@@ -24,7 +24,8 @@ pip install rows
 ```
 
 2. 打开个人的页面，转到活动(如下)，读取一个月以上的数据，然后按插件的 start
-[读取](https://user-images.githubusercontent.com/9304701/27848146-8b69d00c-6175-11e7-8771-29814d9cbaab.png)
+
+![读取](https://user-images.githubusercontent.com/9304701/27848146-8b69d00c-6175-11e7-8771-29814d9cbaab.png)
 
 3. 下载数据，放进文件夹 `input_json`
 
@@ -54,6 +55,6 @@ pip install rows
 - ANDCATE 这个是我 Android 这边统计用到的，可以忽略
 
 
-[示意图](https://user-images.githubusercontent.com/9304701/27848187-d9ddf7ae-6175-11e7-92b3-4fd77ea4965f.png)
+![示意图](https://user-images.githubusercontent.com/9304701/27848187-d9ddf7ae-6175-11e7-92b3-4fd77ea4965f.png)
 
 
