@@ -24,6 +24,7 @@ pip install rows
 ```
 
 2. 打开个人的页面，转到活动(如下)，读取一个月以上的数据，然后按插件的 start
+[读取](https://user-images.githubusercontent.com/9304701/27848146-8b69d00c-6175-11e7-8771-29814d9cbaab.png)
 
 3. 下载数据，放进文件夹 `input_json`
 
@@ -49,4 +50,10 @@ pip install rows
 3. 还有主题也是如 2 那样的原理，因为 FEND 是提问，精品，还有 FEND 。所以就如上进行过滤
 
 - DATE 是匹配日期的
-- FENDCATE 是匹配类别的
+- FENDCATE 是匹配主题的，里面写有关 FEND 的关键词
+- ANDCATE 这个是我 Android 这边统计用到的，可以忽略
+
+
+[示意图](https://user-images.githubusercontent.com/9304701/27848187-d9ddf7ae-6175-11e7-92b3-4fd77ea4965f.png)
+
+
