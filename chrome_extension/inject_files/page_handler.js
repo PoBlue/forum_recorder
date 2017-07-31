@@ -1,7 +1,7 @@
 var DOMAIN = 'http://discussions.youdaxue.com';
-var DATE = ['6月', '天'];
+var DATE = ['7月', '天'];
 var FENDCATE = ['提问', 'FEND', '精品'];
-var ANDCATE = ['ABND', 'AND', 'Android', '纳米新生'];
+var ANDCATE = ['ABND', 'AND', 'Android', '纳米新生', '我的应用'];
 
 // functions
 function getForumData() {
@@ -74,6 +74,7 @@ function getCate(item) {
 function jsonToFile(jsonObject) {
     var data = JSON.stringify(jsonObject);
     var url = 'data:text/json;charset=utf8,' + encodeURIComponent(data);
+    console.log(url);
     window.open(url, '_blank');
     window.focus();
 }

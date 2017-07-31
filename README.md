@@ -28,6 +28,7 @@ pip install rows
 ![读取](https://user-images.githubusercontent.com/9304701/27848146-8b69d00c-6175-11e7-8771-29814d9cbaab.png)
 
 3. 下载数据，放进文件夹 `input_json`
+ps: 在新标签出现闪退情况时，可直接看看 Chrome 的开发者工具里面的 Log，有文件的 url 可以直接下载
 
 4. 在 `Froum_to_csv` 目录下，运行下面的命令，完成导出
 ```

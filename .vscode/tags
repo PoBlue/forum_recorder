@@ -4,11 +4,17 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-AND_FILE	../json_to_csv.py	/^AND_FILE = "and.json"$/;"	kind:variable	line:4
-FEND_FILE	../json_to_csv.py	/^FEND_FILE = "fend.json"$/;"	kind:variable	line:5
-get_record_data	../json_to_csv.py	/^def get_record_data(data):$/;"	kind:function	line:8
+files_name	../json_to_csv.py	/^files_name = get_files_name(input_path)$/;"	kind:variable	line:35
+get_files_name	../json_to_csv.py	/^def get_files_name(mypath):$/;"	kind:function	line:31
+get_record_data	../json_to_csv.py	/^def get_record_data(data):$/;"	kind:function	line:9
+input_path	../json_to_csv.py	/^input_path = "input_json"$/;"	kind:variable	line:6
+isfile	../json_to_csv.py	/^from os.path import isfile, join, splitext$/;"	kind:namespace	line:4
+join	../json_to_csv.py	/^from os.path import isfile, join, splitext$/;"	kind:namespace	line:4
 json	../json_to_csv.py	/^import json$/;"	kind:namespace	line:2
 json_to_csv.py	../json_to_csv.py	1;"	kind:file	line:1
-output_path	../json_to_csv.py	/^output_path = "output_csv\/"$/;"	kind:variable	line:6
+listdir	../json_to_csv.py	/^from os import listdir$/;"	kind:namespace	line:3
+output_name	../json_to_csv.py	/^    output_name = splitext(name)[0] + '.csv'$/;"	kind:variable	line:37
+output_path	../json_to_csv.py	/^output_path = "output_csv\/"$/;"	kind:variable	line:7
 rows	../json_to_csv.py	/^import rows$/;"	kind:namespace	line:1
-to_record_csv	../json_to_csv.py	/^def to_record_csv(json_file_path, output_name):$/;"	kind:function	line:21
+splitext	../json_to_csv.py	/^from os.path import isfile, join, splitext$/;"	kind:namespace	line:4
+to_record_csv	../json_to_csv.py	/^def to_record_csv(json_file_path, output_name):$/;"	kind:function	line:22

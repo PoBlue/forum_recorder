@@ -21,9 +21,10 @@ def get_record_data(data):
 
 def to_record_csv(json_file_path, output_name):
     with open(json_file_path) as data_file:
+        print(json_file_path)
         data = json.load(data_file)
     
-    data = get_record_data(data) # one by one / count down
+    # data = get_record_data(data) # one by one / count sum
 
     data_table = rows.import_from_dicts(data)
     rows.export_to_csv(data_table, output_path + output_name)
@@ -33,6 +34,9 @@ def get_files_name(mypath):
     return onlyfiles
 
 files_name = get_files_name(input_path)
+ignore_files = [".DS_Store"]
 for name in files_name:
+    if name in ignore_files:
+        continue
     output_name = splitext(name)[0] + '.csv'
     to_record_csv(input_path + '/' + name, output_name)
